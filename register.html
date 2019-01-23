@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NYSC Registration Portal</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- page wrapper -->
+  <div class="container">
+    <!-- main header -->
+    <header class="header">
+      <!-- logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="site logo">
+        </a>
+      </div>
+      <!--end logo -->
+      <!-- header navigation -->
+      <div class="topNav pullUp">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="register.html" class="activeLink">Register</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+      <!-- end header navigation -->
+    </header>
+    <!-- end main header -->
+
+    <!-- content header -->
+    <div class="conHeader">
+      <h3>Register For NYSC Portal</h3>
+      <input type="checkbox" name="burgerNav" id="burgerNavCheck">
+      <label for="burgerNavCheck" class="burgerNav pullUp">
+        <!-- <img src="img/ic_line_weight_white_18dp.png" alt="handburger"> -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <div class="subNav pullDown">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="register.html" class="activeLink">Register</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+    <!-- end content header -->
+
+    <!-- main container -->
+    <main class="content">
+      <!-- first section -->
+      <section class="regSection">
+        <form action="#">
+          <div class="regForm">
+            <div>
+              <label for="uTitle">Title</label>
+              <select name="uTitle" id="uTitle" required="required">
+                <option value="mr" selected="selected">Mr</option>
+                <option value="mr">Mrs</option>
+                <option value="mr">Miss</option>
+                <option value="mr">Barrister</option>
+                <option value="mr">Chief</option>
+              </select>
+            </div>
+            <div>
+              <label for="uFullName">Full Name</label>
+              <input type="text" name="uFullName" id="uFullName" required="required" pattern="[A-Za-z ]*" title="Only letters and spaces allowed e.g Thony Romes">
+            </div>
+            <div>
+              <label for="uDob">Date of Birth</label>
+              <input type="date" name="uDob" id="uDob" required="required">
+            </div>
+            <div>
+              <label for="uEmail">Email Address</label>
+              <input type="email" name="uEmail" id="uEmail" required="required" pattern="^[A-Za-z0-9+-_]+@[A-Za-z]+\.[A-Za-z0-9]{2,4}$" title="Only valid email allowed e.g example@gmail.com">
+            </div>
+            <div>
+              <label for="uState">State of Origin</label>
+              <select name="uState" id="uState" required="required">
+                <option value="abia" selected="selected">Abia</option>
+                <option value="adamawa">Adamawa</option>
+                <option value="akwa ibom">Akwa Ibom</option>
+                <option value="anambra">Anambra</option>
+                <option value="bauchi">Bauchi</option>
+              </select>
+            </div>
+            <div>
+              <label for="uLgovt">Local Govt Area</label>
+              <input type="text" name="uLgovt" id="uLgovt" required="required">
+            </div>
+            <div>
+              <label for="uMstatus">Marital Status</label>
+              <select name="mStatus" id="mStatus" required="required">
+                  <option value="single" selected="selected">Single</option>
+                  <option value="married">Married</option>
+                  <option value="divorced">Divorced</option>
+                </select>
+              </div>
+            <div>
+              <label for="uAddress">Contact Address</label>
+              <input type="text" name="uAddress" id="uAddress" required="required">
+            </div>
+            <div>
+              <label for="uPhone">Phone Number</label>
+              <input type="tel" name="uPhone" id="uPhone" required="required" pattern="[0-9+]{10,15}" title="Only numbers and '+' allowed e.g 07012345678 or +2347012345678">
+            </div>
+            <div>
+              <fieldset>
+                <legend>Gender</legend>
+                <div>
+                  <label for="uGenderM" class="cusRadio">
+                    <input type="radio" name="uGender" id="uGenderM" checked="checked" required="required">
+                    <span>
+                      <img src="img/ic_donut_large_white_18dp.png" alt="donut">
+                    </span>
+                    <span>Male</span>
+                  </label>
+                  <label for="uGenderF" class="cusRadio">
+                    <input type="radio" name="uGender" id="uGenderF" required="required">
+                    <span>
+                      <img src="img/ic_donut_large_white_18dp.png" alt="donut">
+                    </span>
+                    <span>Female</span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Physically Challenged?</legend>
+                <div>
+                  <label for="uNo" class="cusRadio">
+                    <input type="radio" name="uPhysic" id="uNo" checked="checked" required="required">
+                    <span>
+                      <img src="img/ic_donut_large_white_18dp.png" alt="donut">
+                    </span>
+                    <span>NO</span>
+                  </label>
+                  <label for="uYes" class="cusRadio">
+                    <input type="radio" name="uPhysic" id="uYes" required="required">
+                    <span>
+                      <img src="img/ic_donut_large_white_18dp.png" alt="donut">
+                    </span>
+                    <span>YES</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="btns">
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset All Fields</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- end main container -->
+    <footer class="footer">
+      <span>
+        Copyright © 2018 National Youth Service Corps. All rights reserved.
+      </span>
+    </footer>
+  </div>
+  <!-- end page wrapper -->
+</body>
+
+</html>
